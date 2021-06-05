@@ -7,14 +7,16 @@
     <link rel="icon" href="favicon-16x16.png" type="image/png">
     <title>Data File Converter</title>
 <style>
-.a{background-color:#4E3524;height:235px;color:white;text-align:center;padding-top:60px;padding-right:70px;}
-.b{background-color:white;height:550px;color:black;padding-top:25px;box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;border-radius:15px;margin-top:40px;}
+body{background-image:url("bgimg.jpg");
+  background-repeat:no-repeat;font-family:Roboto}
+.a{background-color:none;height:235px;color:white;text-align:center;padding-top:60px;padding-right:70px;}
+.b{background-color:white;height:600px;color:black;padding-top:25px;box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;border-radius:15px;margin-top:30px;}
 h1{font-size:60px;font-family:Roboto}
 h3{font-family:Roboto;font-size:40px;}
 p{font-family:Roboto;font-size:25px;}
 .c{font-size:20px;}
-button:hover{font-size:30px;background-color: white;color:black;border:2px solid #008CBA;padding:5px;border-radius:20px}
-button{font-size:30px;background-color:#008CBA;color:white;border:none;padding:5px;border:2px solid #008CBA;margin-left:80px;border-radius:20px}
+button:hover{font-size:30px;background-color: white;color:black;border:2px solid #00008B;padding:5px;padding-left:10px;padding-right:10px;border-radius:20px;font-family:Roboto}
+button{font-size:30px;background-color:#00008B;color:white;border:none;padding:5px;padding-left:10px;padding-right:10px;border:2px solid #00008B;margin-left:80px;border-radius:20px;font-family:Roboto}
 </style>
 </head>
 <body>
@@ -22,11 +24,11 @@ button{font-size:30px;background-color:#008CBA;color:white;border:none;padding:5
 <div class="row a">
 <h1> DATA FILE CONVERTER </h1>
 <div class="row">
-<div class="col-md-2"></div>
-<div class="col-md-8 b">
-<div class="col-md-4" style="margin-left:250px;text-align:left">
+<div class="col-md-1"></div>
+<div class="col-md-11 b">
+<div class="col-sm-5" style="margin-left:150px;text-align:left;margin-bottom:10px;padding-bottom:30px;">
 <h3> Convert</h3>
-<p>
+<p style="color:#ff0066">
 1) From Csv to Json<br>
 2) From Csv to Excel<br>
 3) From Json to Csv<br>
@@ -34,6 +36,9 @@ button{font-size:30px;background-color:#008CBA;color:white;border:none;padding:5
 5) From Excel to Csv<br>
 6) From Excel to Json<br>
 </p>
+<div>
+<img src="files.png" alt="Csv, Json and Excel files" height=250px width=480px style="margin-left:400px;margin-top:-200px;">
+</div>
 <form method="POST" action="#" enctype="multipart/form-data">
 <input type="file" value="file" name="file" class="c"></input><br><br>
 <select name="to" class="c">
@@ -43,6 +48,7 @@ button{font-size:30px;background-color:#008CBA;color:white;border:none;padding:5
     <option value="excel">Excel</option>
 </select><br><br>
 <button type="submit" value="convert" name="convert"> Convert </button>
+<br><br><br>
 </form>
 </div>
 </div>
