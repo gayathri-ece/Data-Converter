@@ -4,29 +4,49 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="icon" href="icon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="favicon-16x16.png" type="image/png">
     <title>Data File Converter</title>
+<style>
+.a{background-color:#4E3524;height:235px;color:white;text-align:center;padding-top:60px;padding-right:70px;}
+.b{background-color:white;height:550px;color:black;padding-top:25px;box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;border-radius:15px;margin-top:40px;}
+h1{font-size:60px;font-family:Roboto}
+h3{font-family:Roboto;font-size:40px;}
+p{font-family:Roboto;font-size:25px;}
+.c{font-size:20px;}
+button:hover{font-size:30px;background-color: white;color:black;border:2px solid #008CBA;padding:5px;border-radius:20px}
+button{font-size:30px;background-color:#008CBA;color:white;border:none;padding:5px;border:2px solid #008CBA;margin-left:80px;border-radius:20px}
+</style>
 </head>
 <body>
-<h1> Data File Converter </h1>
-<h3> Converts</h3>
-<ul>
-<li> From Csv to Json</li>
-<li> From Csv to Excel</li>
-<li> From Json to Csv</li>
-<li> From Json to Excel</li>
-<li> From Excel to Csv</li>
-<li> From Excel to Json</li>
-</ul>
+<div class="container-fluid">
+<div class="row a">
+<h1> DATA FILE CONVERTER </h1>
+<div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-8 b">
+<div class="col-md-4" style="margin-left:250px;text-align:left">
+<h3> Convert</h3>
+<p>
+1) From Csv to Json<br>
+2) From Csv to Excel<br>
+3) From Json to Csv<br>
+4) From Json to Excel<br>
+5) From Excel to Csv<br>
+6) From Excel to Json<br>
+</p>
 <form method="POST" action="#" enctype="multipart/form-data">
-<input type="file" value="file" name="file"></input><br>
-<select name="to">
+<input type="file" value="file" name="file" class="c"></input><br><br>
+<select name="to" class="c">
     <option>Convert to</option>
     <option value="csv">Csv</option>
     <option value="json">Json</option>
     <option value="excel">Excel</option>
-</select>
+</select><br><br>
 <button type="submit" value="convert" name="convert"> Convert </button>
 </form>
+</div>
+</div>
+</div>
+</div>
 </body>
 </html>
